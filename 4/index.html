@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width">
-    <link href="css/reset.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.gif" type="image/gif">
-    <!--<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">-->
-    <!--<link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">-->
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
 
-    <!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
-    <!--<script src="libs/owlcarousel/owl.carousel.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <!--<script src="js/script.js"></script>-->
 
     <title>Marshall Guitar Amplifiers</title>
@@ -20,24 +17,15 @@
 </head>
 
 <body>
-
-
-
-<!--<svg class="logo__img"  viewBox="0 100 500 130">-->
-    <!--<use xlink:href="img/marshall-logo.svg#marshall-logo"></use>-->
-<!--</svg>-->
-
-
+<div class="logo-bg" >
+    <!--<img src="img/marshall-logo-bg.svg" alt="">-->
+</div>
 
 <header>
     <div class="wrapper">
         <div class="line-top">
-            <a class="logo">
-                <svg class="logo__img" viewBox="0 100 500 130">
-                    <use xlink:href="img/marshall-logo.svg#marshall-logo"></use>
-                </svg>
-            </a>
             <nav class="nav-top">
+                <a class="menu-button" href="#">MENU</a>
                 <ul>
                     <li><a href="#">PRODUCTS</a>
                     </li>
@@ -98,6 +86,15 @@
         </div>
     </div>
 </header>
+<div class="logo-line">
+    <div class="wrapper">
+        <a class="logo">
+            <svg class="logo__img" viewBox="0 100 500 130">
+                <use xlink:href="img/marshall-logo.svg#marshall-logo"></use>
+            </svg>
+        </a>
+    </div>
+</div>
 
 <div class="banner">
     <div class="wrapper">
@@ -115,7 +112,7 @@
 </div>
 
 
-<div>
+<div class="discounts-wrap">
     <div class="wrapper">
         <div class="discounts">
             <div class="discounts-item">
@@ -458,7 +455,7 @@
     <div class="wrapper">
         <nav class="nav-bot">
             <div class="nav-menu">
-                <span class="nav-menu__title">MENU</span>
+                <span class="nav-menu__title  menu-button">MENU</span>
                 <ul class="nav-menu__list">
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">Artists</a></li>
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">Live for music</a></li>
@@ -467,7 +464,7 @@
                 </ul>
             </div>
             <div class="nav-menu">
-                <span class="nav-menu__title">PRODUCTS</span>
+                <span class="nav-menu__title  menu-button">PRODUCTS</span>
                 <ul class="nav-menu__list">
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">AMPs</a></li>
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">FX Pedals</a></li>
@@ -475,7 +472,7 @@
                 </ul>
             </div>
             <div class="nav-menu">
-                <span class="nav-menu__title">SUPPORT</span>
+                <span class="nav-menu__title  menu-button">SUPPORT</span>
                 <ul class="nav-menu__list">
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">Product support</a></li>
                     <li class="nav-menu__line"><a href="#" class="nav-menu__link">Register your product</a></li>
@@ -483,7 +480,7 @@
                 </ul>
             </div>
             <div class="nav-menu">
-                <span class="nav-menu__title">CONTACTS</span>
+                <span class="nav-menu__title  menu-button">CONTACTS</span>
                 <!--<div class="social">-->
                 <!--<a href="#" class="social__facebook"> <img src="img/facebook.jpg" alt=""></a>-->
                 <!--<a href="#" class="social__vk"> <img src="img/vk.jpg" alt=""></a>-->
@@ -498,7 +495,26 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    $('.menu-button').click(function () {
+        $(this).parent().find('ul').toggleClass("display-on");
+    });
+
+</script>
+
+
+<script>
+    $(window).scroll(function(e){
+        var scrolled = $(window).scrollTop();
+        $('.logo-bg').css('top', -(scrolled * 0.2) + 'px');
+    });
+
+</script>
 <!--<script src="http://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>-->
 <!--<script src="http://yastatic.net/share2/share.js"></script>-->
 </body>
 </html>
+
+
