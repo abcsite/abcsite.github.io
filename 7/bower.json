@@ -1,0 +1,23 @@
+{
+  "name": "hw-6",
+  "authors": [
+    "abcsite <evgen012@gmail.com>"
+  ],
+  "description": "hw-6",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0"
+  }
+}

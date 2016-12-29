@@ -1,0 +1,69 @@
+<footer>
+    <div class="wrapper">
+        <nav class="nav-bot">
+            <div class="nav-menu">
+                <span class="nav-menu__title  menu-button">MENU</span>
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">Artists</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">Live for music</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">History</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">MyMarshall</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <span class="nav-menu__title  menu-button">PRODUCTS</span>
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">AMPs</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">FX Pedals</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">Cabinets</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <span class="nav-menu__title  menu-button">SUPPORT</span>
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">Product support</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">Register your product</a></li>
+                    <li class="nav-menu__line"><a href="#" class="nav-menu__link">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <span class="nav-menu__title  menu-button">CONTACTS</span>
+                <!--<div class="social">-->
+                <!--<a href="#" class="social__facebook"> <img src="img/facebook.jpg" alt=""></a>-->
+                <!--<a href="#" class="social__vk"> <img src="img/vk.jpg" alt=""></a>-->
+                <!--<a href="#" class="social__twitter"> <img src="img/twitter_grey.jpg" alt=""></a>-->
+                <!--</div>-->
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__line">+7(915)458-75-64</li>
+                    <li class="nav-menu__line">+7(915)458-75-65</li>
+                </ul>
+                <!--<div class="nav-menu__phone">+7(915)458-75-64</div>-->
+                <!--<div class="nav-menu__phone">+7(915)458-75-65</div>-->
+            </div>
+        </nav>
+        <div class="copyr">
+            &copy; Marshall
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    $('.menu-button').click(function () {
+        $(this).parent().parent().find('.nav-menu__list').removeClass("selected");
+        $(this).parent().find('.nav-menu__list').addClass("selected");
+        $(this).parent().parent().find('.nav-menu__list:not(.selected)').removeClass("display-on");
+        $(this).parent().find('.nav-menu__list.selected').toggleClass("display-on");
+    });
+</script>
+
+
+<script>
+    $(window).scroll(function (e) {
+        var scrolled = $(window).scrollTop();
+        $('.logo-bg').css('top', -(scrolled * 0.2) + 'px');
+    });
+</script>
+
+</body>
+</html>
